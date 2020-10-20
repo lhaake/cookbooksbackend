@@ -1,9 +1,11 @@
+require('dotenv').config()
 const mongoose = require('mongoose')
+const mongoURI = process.env.mongoURI
 
 // mongoose.connect('mongodb://localhost/cookbooks', { useUnifiedTopology: true, useNewUrlParser: true })
 
 // Create Connection URI
-const mongoURI = 'mongodb://localhost/cookbooks_db'
+// const mongoURI = 'mongodb://localhost/cookbooks_db'
 
 // CONFIG PARAMS
 const config = {
